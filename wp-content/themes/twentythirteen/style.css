@@ -888,7 +888,7 @@ div.nav-menu > ul {
 .nav-menu .sub-menu,
 .nav-menu .children {
 	background-color: #220e10;
-	border: 2px solid #f7f5e7;
+/*	border: 2px solid #f7f5e7;*/
 	border-top: 0;
 	padding: 0;
 	position: absolute;
@@ -958,7 +958,7 @@ ul.nav-menu .focus > ul,
 .site-header .search-form {
 	position: absolute;
 	right: 20px;
-	top: 4px;
+	top: 5px;
 }
 
 .site-header .search-field {
@@ -2569,7 +2569,7 @@ footer.entry-meta {
 
 .site-footer .widget-area {
 	margin: 0 auto;
-	max-width: 1040px;
+	max-width: 1080px;
 	width: 100%;
 }
 
@@ -2581,7 +2581,7 @@ footer.entry-meta {
 
 .site-footer .widget {
 	background: transparent;
-	color: #fff;
+	color: #414141;
 	float: left;
 	margin-right: 20px;
 	width: 245px;
