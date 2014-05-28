@@ -64,11 +64,11 @@
 	margin-left:2%;
 	margin-right:2%;
 	-moz-box-shadow:1px 1px 8px rgba(0,0,0,0.3);
-	-webkit-box-shadow:1px 1px 8px rgba(0,0,0,0.3);*/
-/*	padding:0;
-	float:left;*/
+	-webkit-box-shadow:1px 1px 8px rgba(0,0,0,0.3);
+	padding:0;
+	float:left;
 	text-align:center;
-/*	position:relative;*/
+	position:relative;*/
 }
 
 .product_grid_display .product_grid_item img.product_image {
@@ -230,7 +230,7 @@
 }
 
 .product_grid_display .wpsc_buy_button, #content .product_grid_display .wpsc_buy_button {
-	background:-webkit-gradient(
+/*	background:-webkit-gradient(
     linear,
     left bottom,
     left top,
@@ -241,24 +241,27 @@
     center bottom,
     rgb(73,166,192) 76%,
     rgb(125,195,215) 100%
-	);
-	background-color:#006699;
+	);*/
+	background:#3399fe;
 	color:#ffffff;
 	font-size:12px;
 	border-radius:3px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
-	border:1px solid #29bade;
-	text-shadow:1px 1px 1px rgba(0,0,0,0.8);
-	padding:5px;
-	*padding:1px;
+	/*border:1px solid #29bade;
+	text-shadow:1px 1px 1px rgba(0,0,0,0.8);*/
+	padding:10px 20px;
+	*padding:7px 20px;
 	cursor:pointer;
 	line-height:1.2em;
 	margin:0;
+	border-bottom:0;
+	text-transform:uppercase
+
 }
 
 .product_grid_display .wpsc_buy_button, #content .product_grid_display .wpsc_buy_button:hover {
-	background:#369;
+/*	background:#369;*/
 }
 
 .product_grid_display a.more_details:link, .product_grid_display a.more_details:visited {
@@ -273,4 +276,4 @@
 	text-decoration:underline;
 }
 
-
+.quantity_container{margin-top:2px; display:inline-block}
