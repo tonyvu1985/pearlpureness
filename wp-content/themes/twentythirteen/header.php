@@ -33,10 +33,21 @@
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">
-			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+			<div class="row home-link">
+				<div class="col-md-6 col-xs-12">
+			<a  href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</a>
+				</div>
+				<div class="col-md-6 col-xs-12" style="text-align:right">
+					<ul class="toplink">
+						<li><a href="<?php echo get_site_url() . '/products-page/your-account/' ?>">My Account</a></li>
+						<li><a href="<?php echo get_site_url() . '/products-page/transaction-results/' ?>">Transaction Results</a></li>
+						<li><a href="<?php echo get_site_url() . '/products-page/checkout/' ?>">Checkout</a></li>
+					</ul>
+				</div>
+			</div>
 
 			<div id="navbar" class="navbar">
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">

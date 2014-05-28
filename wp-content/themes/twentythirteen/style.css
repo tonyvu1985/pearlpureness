@@ -816,16 +816,30 @@ img.wp-smiley,
 }
 
 .site-header .home-link {
-	color: #141412;
 	display: block;
 	margin: 0 auto;
 	max-width: 1080px;
 	min-height: 230px;
 	padding: 0 20px;
-	text-decoration: none;
 	width: 100%;
 }
+.site-header .home-link a{
+	color: #141412;
+	text-decoration: none;
+}
+.site-header .home-link .toplink{
+	list-style-type:none;
+}
 
+.site-header .home-link .toplink li{
+	float:right;
+	padding-left:10px;
+	text-transform:uppercase
+}
+
+.site-header .home-link .toplink li a:hover{
+	color:#42a62a;
+}
 .site-header .site-title:hover {
 	text-decoration: underline;
 }
@@ -871,7 +885,7 @@ div.nav-menu > ul {
 .nav-menu li a {
 	color: #fff;
 	display: block;
-	font-size: 15px;
+	font-size: 13px;
 	padding: 15px 20px;
 	text-decoration: none;
 	text-transform:uppercase;
