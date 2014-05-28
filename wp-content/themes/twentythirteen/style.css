@@ -1049,6 +1049,12 @@ ul.nav-menu .focus > ul,
 .entry-title {
 	font-weight: normal;
 	margin: 0 0 5px;
+	font-size:22px;
+	color:#42a62a;
+	text-transform:uppercase;
+	border-left: 4px solid #3399fe;
+	padding-left:10px;
+	
 }
 
 .entry-title a {
@@ -2479,7 +2485,7 @@ footer.entry-meta {
 }
 
 .widget li {
-	padding: 5px 0;
+	padding: 0;
 }
 
 .widget .children li:last-child {
@@ -2611,7 +2617,13 @@ footer.entry-meta {
 }
 
 .site-footer .widget a {
-	color: #e6402a;
+	color: #414141;
+	font-weight:normal;
+}
+
+.site-footer .widget a:hover {
+	color:#888;
+	text-decoration:none
 }
 
 .site-footer .widget-title,

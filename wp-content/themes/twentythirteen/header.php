@@ -41,6 +41,7 @@
 			</a>
 				</div>
 				<div class="col-md-6 col-xs-12" style="text-align:right">
+					<img class="free-delivery" src="<?php echo get_site_url() . '/wp-content/uploads/2014/05/Free-delivery.png' ;?>" alt="free delivery" />
 					<ul class="toplink">
 						<li><a href="<?php echo get_site_url() . '/products-page/your-account/' ?>">My Account</a></li>
 						<li><a href="<?php echo get_site_url() . '/products-page/transaction-results/' ?>">Transaction Results</a></li>
