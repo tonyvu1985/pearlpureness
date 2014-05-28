@@ -58,9 +58,9 @@ $image_height = get_option('product_image_height');
 	<?php endif; ?>
 
 
-	<div class="product_grid_display group">
+	<div class="product_grid_display group row">
 		<?php while (wpsc_have_products()) :  wpsc_the_product(); ?>
-			<div class="product_grid_item product_view_<?php echo wpsc_the_product_id(); ?>">
+			<div class="col-md-3 col-sm-6 product_grid_item product_view_<?php echo wpsc_the_product_id(); ?>">
 
 				<?php if(wpsc_the_product_thumbnail()) :?>
 					<div class="item_image">

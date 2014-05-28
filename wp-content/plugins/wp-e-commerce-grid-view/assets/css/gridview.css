@@ -1,6 +1,6 @@
 /*-----GRID PRODUCT DISPLAY-----*/
 #grid_view_products_page_container, #content #grid_view_products_page_container, #content #list_view_products_page_container {
-	width:650px;	
+/*	width:650px;	*/
 	position:relative;
 	line-height:1.2em;
 }
@@ -60,15 +60,15 @@
 }
 
 .product_grid_display .product_grid_item {
-	margin-top:10px;
+	/*margin-top:10px;
 	margin-left:2%;
 	margin-right:2%;
 	-moz-box-shadow:1px 1px 8px rgba(0,0,0,0.3);
-	-webkit-box-shadow:1px 1px 8px rgba(0,0,0,0.3);
-	padding:0;
-	float:left;
+	-webkit-box-shadow:1px 1px 8px rgba(0,0,0,0.3);*/
+/*	padding:0;
+	float:left;*/
 	text-align:center;
-	position:relative;
+/*	position:relative;*/
 }
 
 .product_grid_display .product_grid_item img.product_image {
@@ -89,7 +89,7 @@
 	font-size:16px;
 	margin-bottom:5px;	
 	color:#006699;
-	text-align:center;
+	text-align:left;
 	word-wrap: break-word;
 	line-height:1.0em;
 }
@@ -108,7 +108,9 @@
 
 .product_grid_display h2.prodtitle a:link, #content .product_grid_display h2.prodtitle a:link, .product_grid_display h2.prodtitle a:visited, #content .product_grid_display h2.prodtitle a:visited {
 	text-decoration:none;
-	color:#006699;	
+	color:#141412;	
+	font-weight:normal;
+	text-transform: uppercase
 }
 
 .product_grid_display h2.prodtitle a:hover, #content .product_grid_display h2.prodtitle a:hover, .product_grid_display h2.prodtitle a:active, #content .product_grid_display h2.prodtitle a:active {
@@ -181,7 +183,7 @@
 	color:#F60;
 	font-size:12px;
 	line-height:1.2em;
-	text-align:center;
+	text-align:left;
 }
 
 .product_grid_display .grid_product_info .grid_description, #content .product_grid_display .grid_product_info .grid_description {

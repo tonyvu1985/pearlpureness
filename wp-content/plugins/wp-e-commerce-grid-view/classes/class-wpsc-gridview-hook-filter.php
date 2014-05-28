@@ -44,14 +44,14 @@ class WPSC_GridView_Hook_Filter
 			?>
 			<style type="text/css">
 				.product_grid_display .product_grid_item {
-					width:<?php echo $percentage; ?>%;
+				/*	width:<?php echo $percentage; ?>%;*/
 				}
 				.product_grid_display .item_image a {
 					display: inline-block;
 					height: <?php echo get_option('product_image_height'); ?>px;
 					line-height: <?php echo (get_option('product_image_height') - 4); ?>px;
 					width: 100%;
-					text-align:center;
+					text-align:left;
 					vertical-align: middle;
 				}
 			</style>
