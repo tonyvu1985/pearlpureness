@@ -1,4 +1,6 @@
 /*-----GRID PRODUCT DISPLAY-----*/
+.wpsc-product-price{position:absolute; top:0; left:15px;}
+.wpsc-product-price .currentprice{padding:6px; display:inline-block; background:#222; color:#fff; font-size:14px}
 #grid_view_products_page_container, #content #grid_view_products_page_container, #content #list_view_products_page_container {
 /*	width:650px;	*/
 	position:relative;
@@ -213,7 +215,7 @@
 	font-size:14px;
 	color:#C33;	
 	background:url(images/outofstock.png) no-repeat scroll 0 2px transparent;
-	padding-left:18px;
+/*	padding-left:18px;*/
 	margin:0;
 	line-height:1.2em;
 	min-height:19px;

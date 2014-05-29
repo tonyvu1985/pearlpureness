@@ -34,10 +34,11 @@
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">
 			<div class="row home-link">
-				<div class="col-md-6 col-xs-12">
+				<div class="col-md-6 col-xs-12" style="padding-left:0;">
 			<a  href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+<!--				<h1 class="site-title"><?php //bloginfo( 'name' ); ?></h1>
+				<h2 class="site-description"><?php //bloginfo( 'description' ); ?></h2>-->
+				<img src="<?php echo get_site_url() . '/wp-content/uploads/2014/05/pearlpureness-logo.png'; ?>" alt="pearlpureness logo" />
 			</a>
 				</div>
 				<div class="col-md-6 col-xs-12" style="text-align:right">
