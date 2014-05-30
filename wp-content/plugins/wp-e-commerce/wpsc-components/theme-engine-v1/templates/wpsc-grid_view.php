@@ -125,13 +125,13 @@ $image_height = get_option('product_image_height');
 							<?php if((get_option('display_addtocart') == 1) && (get_option('addtocart_or_buynow') !='1')) :?>
 								<?php if(wpsc_product_has_stock()) : ?>
 									<?php if(wpsc_has_multi_adding()): ?>
-		                            <div class="quantity_container">
-										<label class="wpsc_quantity_update" for="wpsc_quantity_update_<?php echo wpsc_the_product_id(); ?>"><?php _e('Qty', 'wpsc'); ?></label>
-										<input type="text" id="wpsc_quantity_update_<?php echo wpsc_the_product_id(); ?>" name="wpsc_quantity_update" size="2" value="1" />
+		                            <div class="quantity_container input-group">
+										<span class="input-group-addon"><label class="wpsc_quantity_update" for="wpsc_quantity_update_<?php echo wpsc_the_product_id(); ?>"><?php _e('Qty', 'wpsc'); ?></label></span>
+										<input class="form-control" type="text" id="wpsc_quantity_update_<?php echo wpsc_the_product_id(); ?>" name="wpsc_quantity_update" size="2" value="1" />
 										<input type="hidden" name="key" value="<?php echo wpsc_the_cart_item_key(); ?>"/>
 										<input type="hidden" name="wpsc_update_quantity" value="true" />
 										<input type='hidden' name='wpsc_ajax_action' value='wpsc_update_quantity' />
-									</div><!--close quantity_container-->
+
 									<?php
 										endif;
 										if ( get_option( 'display_variations' ) != 1 && wpsc_product_has_variations( wpsc_the_product_id() ) ) :
@@ -140,10 +140,12 @@ $image_height = get_option('product_image_height');
 									<?php
 										else :
 									?>
-						<div style="display:inline-block">
+						<span class="input-group-btn">
 									<input type="hidden" value="add_to_cart" name="wpsc_ajax_action"/>
-									<input type="submit" value="<?php _e('Add To Cart', 'wpsc'); ?>" name="Buy" class="wpsc_buy_button" id="product_<?php echo wpsc_the_product_id(); ?>_submit_button"/>
-						</div>
+									<input type="submit" value="<?php _e('Add To Cart', 'wpsc'); ?>" name="Buy" class="wpsc_buy_button btn btn-cart btn-danger" id="product_<?php echo wpsc_the_product_id(); ?>_submit_button"/>
+						</span>
+
+									</div><!--close quantity_container-->
 
 									<?php
 											endif;

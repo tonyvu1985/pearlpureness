@@ -369,6 +369,7 @@ table.list_productdisplay .quantity_container {
 
 #content input.wpsc_buy_button{
 	font-size: 12px;
+	padding:10px 20px !important;
 }
 
 table.list_productdisplay .wpsc_buy_button_container {
@@ -442,7 +443,7 @@ table.list_productdisplay p.soldout {
 }
 
 .imagecol {
-	margin-right:5px;
+	margin-right:10px;
 /* 	width:25%; */
 	float:left;
 	position:relative;
@@ -478,9 +479,8 @@ table.list_productdisplay p.soldout {
 }
 
 .single_product_display form.product_form input, #content .single_product_display form.product_form input {
-	padding:2px;
+	padding:4px 7px;
 	margin:0;
-
 	line-height:1.2em;
 	font-size:14px;
 }

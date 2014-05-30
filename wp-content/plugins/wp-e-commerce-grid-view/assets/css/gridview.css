@@ -112,11 +112,13 @@
 	text-decoration:none;
 	color:#141412;	
 	font-weight:normal;
-	text-transform: uppercase
+	text-transform: uppercase;
+	font-size:12px;
 }
 
 .product_grid_display h2.prodtitle a:hover, #content .product_grid_display h2.prodtitle a:hover, .product_grid_display h2.prodtitle a:active, #content .product_grid_display h2.prodtitle a:active {
-	text-decoration:underline;
+/*	text-decoration:underline;*/
+	color:#3399fe;
 }
 
 .product_grid_display div.grid_description p, #content .product_grid_display div.grid_description p {
@@ -278,4 +280,4 @@
 	text-decoration:underline;
 }
 
-.quantity_container{margin-top:2px; display:inline-block}
+.quantity_container{/*margin-top:2px; display:inline-block*/}
