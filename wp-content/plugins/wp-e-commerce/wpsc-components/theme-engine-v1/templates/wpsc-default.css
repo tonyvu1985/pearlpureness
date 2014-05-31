@@ -485,6 +485,7 @@ table.list_productdisplay p.soldout {
 	font-size:14px;
 }
 
+.single_product_display .wpsc_buy_button{background: #3399fe}
 .single_product_display form.product_form input.input_custom_text, #content .single_product_display form.product_form input.input_custom_text {
 	width:250px;
 }
@@ -908,7 +909,7 @@ background-color: #f5f5f5;
 
 #checkout_page_container .total_price.total_shipping td:first-child,
 #checkout_page_container .total_price td:first-child {
-	padding-left: 50px;
+/*	padding-left: 50px;*/
 }
 
 #checkout_page_container .wpsc_shipping_quote_name,

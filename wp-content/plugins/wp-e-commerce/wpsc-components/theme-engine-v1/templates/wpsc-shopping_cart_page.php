@@ -13,7 +13,7 @@ endif;
 ?>
 <div id="checkout_page_container">
 <h3><?php _e('Please review your order', 'wpsc'); ?></h3>
-<table class="checkout_cart">
+<table class="checkout_cart table">
    <tr class="header">
       <th colspan="2" ><?php _e('Product', 'wpsc'); ?></th>
       <th><?php _e('Quantity', 'wpsc'); ?></th>
@@ -104,7 +104,7 @@ endif;
          <td colspan="2"><?php _e('Enter coupon code :', 'wpsc'); ?></td>
          <td  colspan="4" class="coupon_code">
             <form  method="post" action="<?php echo esc_url( get_option( 'shopping_cart_url' ) ); ?>">
-               <input type="text" name="coupon_num" id="coupon_num" value="<?php echo $wpsc_cart->coupons_name; ?>" />
+               <input class="form-control" type="text" name="coupon_num" id="coupon_num" value="<?php echo $wpsc_cart->coupons_name; ?>" />
                <input type="submit" value="<?php _e('Update', 'wpsc') ?>" />
             </form>
          </td>
@@ -236,7 +236,8 @@ endif;
 				</fieldset>
 			</div>
 	<?php endif; ?>
-   <table class='wpsc_checkout_table wpsc_checkout_table_totals'>
+
+   <table class='wpsc_checkout_table wpsc_checkout_table_totals table'>
       <?php if(wpsc_uses_shipping()) : ?>
 	      <tr class="total_price total_shipping">
 	         <td class='wpsc_totals'>
@@ -288,13 +289,13 @@ endif;
 	        	<h2><?php _e('Join up now', 'wpsc');?></h2>
 
 				<label><?php _e('Username:', 'wpsc'); ?></label>
-				<input type="text" name="log" id="log" value="" size="20"/><br/>
+				<input class="form-control" type="text" name="log" id="log" value="" size="20"/><br/>
 
 				<label><?php _e('Password:', 'wpsc'); ?></label>
-				<input type="password" name="pwd" id="pwd" value="" size="20" /><br />
+				<input class="form-control" type="password" name="pwd" id="pwd" value="" size="20" /><br />
 
 				<label><?php _e('E-mail', 'wpsc'); ?>:</label>
-	            <input type="text" name="user_email" id="user_email" value="" size="20" /><br />
+	            <input class="form-control" type="text" name="user_email" id="user_email" value="" size="20" /><br />
 	            <div class="wpsc_signup_text"><?php _e('Signing up is free and easy! please fill out your details your registration will happen automatically as you checkout. Don\'t forget to use your details to login with next time!', 'wpsc');?></div>
 	        </fieldset>
 
@@ -313,7 +314,7 @@ endif;
       endif;
       ?>
 <?php ob_start(); ?>
-   <table class='wpsc_checkout_table table-1'>
+   <table class='wpsc_checkout_table table-1 table'>
       <?php $i = 0;
       while (wpsc_have_checkout_items()) : wpsc_the_checkout_item(); ?>
 

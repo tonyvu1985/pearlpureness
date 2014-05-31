@@ -213,7 +213,7 @@
 }
 
 .product_grid_display p.soldout, #content .product_grid_display p.soldout {
-	font-weight:bold;
+/*	font-weight:bold;*/
 	font-size:14px;
 	color:#C33;	
 	background:url(images/outofstock.png) no-repeat scroll 0 2px transparent;
@@ -249,10 +249,10 @@
 	background:#3399fe;
 	color:#ffffff;
 	font-size:12px;
-	border-radius:3px;
+	/*border-radius:3px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
-	/*border:1px solid #29bade;
+	border:1px solid #29bade;
 	text-shadow:1px 1px 1px rgba(0,0,0,0.8);*/
 	padding:10px 20px;
 	*padding:7px 20px;
