@@ -11,6 +11,10 @@ Author URI: http://instinct.co.nz
  * If you delete this file, you can expect your WP e-Commerce installation to break in some manner
  * to create your own theme copy, and paste this file, change the names and alter to your tastes
 */
+/* tonyvu css */
+.wpsc_email_address{clear:both; display:inline-block}
+.wpsc_billing_forms h4{border-left: 5px solid #3399fe; padding-left:10px; font-size:18px; text-transform:uppercase}
+.wpsc_checkout_table input, .wpsc_checkout_table select, .wpsc_checkout_table textarea{width:100%; margin: 5px 0 !important}
 /*-----UTILITY-----*/
 .group:after {
 	content:" ";
@@ -825,6 +829,13 @@ span.rating_saved{
 	clear:both;
 }
 
+#checkout_page_container h3{
+	text-transform:uppercase;
+	font-size:18px;
+	border-left: 5px solid #3399fe;
+	padding-left:10px
+}
+
 #checkout_page_container textarea,
 #checkout_page_container input,
 #content #checkout_page_container textarea,
@@ -840,6 +851,7 @@ span.rating_saved{
 
 #checkout_page_container table.checkout_cart tr.header th{
 /*	text-align: center;*/
+	font-weight:normal
 }
 
 #checkout_page_container table.checkout_cart tr.header th:first-child{
@@ -880,7 +892,6 @@ span.rating_saved{
 }
 
 .wpsc_checkout_table input.text{
-	width:255px;
 }
 
 #content img#wpsc_checkout_gravatar{

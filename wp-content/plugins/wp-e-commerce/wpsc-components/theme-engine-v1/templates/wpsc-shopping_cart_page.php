@@ -314,6 +314,8 @@ endif;
       endif;
       ?>
 <?php ob_start(); ?>
+<div class="row"><!-- begin of 2 tables -->
+<div class="col-md-6 col-xs-12">
    <table class='wpsc_checkout_table table-1 table'>
       <?php $i = 0;
       while (wpsc_have_checkout_items()) : wpsc_the_checkout_item(); ?>
@@ -323,7 +325,9 @@ endif;
                //display headers for form fields ?>
                <?php if($i > 1):?>
                   </table>
-                  <table class='wpsc_checkout_table table-<?php echo $i; ?>'>
+</div>
+<div class= "col-md-6 col-xs-12">
+                  <table class='wpsc_checkout_table table-<?php echo $i; ?> table'>
                <?php endif; ?>
 
                <tr class="checkout-heading-row <?php echo wpsc_the_checkout_item_error_class( false );?>">
@@ -342,13 +346,13 @@ endif;
                   	$shipping_same_as_billing = false;
                   wpsc_update_customer_meta( 'shippingSameBilling', $shipping_same_as_billing );
                   	if( $shipping_same_as_billing )
-                  		$checked = 'checked="checked"';
-                   ?>
-					<label for='shippingSameBilling'><input type='checkbox' value='true'  data-wpsc-meta-key="shippingSameBilling" class= "wpsc-visitor-meta"  name='shippingSameBilling' id='shippingSameBilling' <?php echo $checked; ?> /><?php _e('Same as billing address:','wpsc'); ?></label>
-					<br/><span id="shippingsameasbillingmessage"><?php _e('Your order will be shipped to the billing address', 'wpsc'); ?></span>
-                  </td>
-               </tr>
-               <?php endif;
+			$checked = 'checked="checked"';
+	   ?>
+				<label for='shippingSameBilling'><input type='checkbox' value='true'  data-wpsc-meta-key="shippingSameBilling" class= "wpsc-visitor-meta"  name='shippingSameBilling' id='shippingSameBilling' <?php echo $checked; ?> /><?php _e('Same as billing address:','wpsc'); ?></label>
+				<br/><span id="shippingsameasbillingmessage"><?php _e('Your order will be shipped to the billing address', 'wpsc'); ?></span>
+	  </td>
+       </tr>
+       <?php endif;
 
             // Not a header so start display form fields
             }elseif( $wpsc_checkout->checkout_item->unique_name == 'billingemail'){ ?>
@@ -431,7 +435,8 @@ endif;
          </tr>
       <?php endif; ?>
       </table>
-
+</div>
+</div> <!-- end of 2 tables -->
 <!-- div for make purchase button -->
       <div class='wpsc_make_purchase'>
          <span>
