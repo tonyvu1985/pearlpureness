@@ -15,6 +15,7 @@ Author URI: http://instinct.co.nz
 .wpsc_email_address{clear:both; display:inline-block}
 .wpsc_billing_forms h4{border-left: 5px solid #3399fe; padding-left:10px; font-size:18px; text-transform:uppercase}
 .wpsc_checkout_table input, .wpsc_checkout_table select, .wpsc_checkout_table textarea{width:100%; margin: 5px 0 !important}
+.wpsc_checkout_table wpsc_checkout_table_totals{text-align: right; background: #f5f5f5; width: 250px; padding: 20px; display: block; border: 1px solid #ccc; font-size: 18px;}
 /*-----UTILITY-----*/
 .group:after {
 	content:" ";
@@ -1041,7 +1042,7 @@ background-color: #f5f5f5;
 .wpsc_registration_form {
 	float:left;
 	margin-top: 15px;
-	width:300px;
+	width:100%;
 }
 
 .wpsc_registration_form label {
@@ -1055,22 +1056,28 @@ background-color: #f5f5f5;
 	padding-left: 0px;
 	padding-top: 12px;
 	border-top-color: #E7E7E7;
+	border-top-style: solid;
+	border-top-width: 0px;
+}
 
-    border-top-style: solid;
-	border-top-width: 2px;
+.wpsc_registration_form fieldset h2{
+	font-size:18px;
+	border-left:5px solid #3399fe;
+	padding-left:10px;
+	text-transform:uppercase
 }
 
 .wpsc_registration_form.wpsc_right_registration{
 	border-left-style: solid;
 	border-left-color: #E7E7E7;
-	border-left-width: 2px;
-	padding-left: 20px;
+	border-left-width: 0px;
+	padding-left: 0px;
 }
 
 .wpsc_signup_text {
 	padding-top: 15px;
 	font-size: 12px;
-
+	clear:both
 }
 
 #shippingSameBilling{
