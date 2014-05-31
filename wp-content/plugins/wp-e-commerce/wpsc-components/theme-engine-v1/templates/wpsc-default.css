@@ -14,8 +14,9 @@ Author URI: http://instinct.co.nz
 /* tonyvu css */
 .wpsc_email_address{clear:both; display:inline-block}
 .wpsc_billing_forms h4{border-left: 5px solid #3399fe; padding-left:10px; font-size:18px; text-transform:uppercase}
-.wpsc_checkout_table input, .wpsc_checkout_table select, .wpsc_checkout_table textarea{width:100%; margin: 5px 0 !important}
-.wpsc_checkout_table wpsc_checkout_table_totals{text-align: right; background: #f5f5f5; width: 250px; padding: 20px; display: block; border: 1px solid #ccc; font-size: 18px;}
+.wpsc_checkout_table input[type="text"], .wpsc_checkout_table select, .wpsc_checkout_table textarea{width:100%; margin: 5px 0 !important}
+.wpsc_checkout_table.wpsc_checkout_table_totals{text-align: right; background: #f5f5f5; width: 250px; padding: 20px !important; display: block; border: 1px solid #ccc !important; font-size: 18px;}
+.shippingSameBilling{background:#eee}
 /*-----UTILITY-----*/
 .group:after {
 	content:" ";

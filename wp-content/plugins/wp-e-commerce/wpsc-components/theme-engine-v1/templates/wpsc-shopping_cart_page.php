@@ -349,7 +349,7 @@ endif;
                   	if( $shipping_same_as_billing )
 			$checked = 'checked="checked"';
 	   ?>
-				<label for='shippingSameBilling'><input type='checkbox' value='true'  data-wpsc-meta-key="shippingSameBilling" class= "wpsc-visitor-meta"  name='shippingSameBilling' id='shippingSameBilling' <?php echo $checked; ?> /><?php _e('Same as billing address:','wpsc'); ?></label>
+				<label class= 'shippingSameBilling' for='shippingSameBilling'><input type='checkbox' value='true'  data-wpsc-meta-key="shippingSameBilling" class= "wpsc-visitor-meta"  name='shippingSameBilling' id='shippingSameBilling' <?php echo $checked; ?> /><?php _e(' Same as billing address:','wpsc'); ?></label>
 				<br/><span id="shippingsameasbillingmessage"><?php _e('Your order will be shipped to the billing address', 'wpsc'); ?></span>
 	  </td>
        </tr>
