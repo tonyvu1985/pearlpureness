@@ -13,7 +13,8 @@ endif;
 ?>
 <div id="checkout_page_container">
 <h3><?php _e('Please review your order', 'wpsc'); ?></h3>
-<table class="checkout_cart table">
+<div class="row">
+<table class="checkout_cart table table-hover">
    <tr class="header">
       <th colspan="2" ><?php _e('Product', 'wpsc'); ?></th>
       <th><?php _e('Quantity', 'wpsc'); ?></th>
@@ -65,7 +66,7 @@ endif;
                <input type="hidden" name="key" value="<?php echo wpsc_the_cart_item_key(); ?>" />
                <input type="hidden" name="wpsc_update_quantity" value="true" />
                <input type='hidden' name='wpsc_ajax_action' value='wpsc_update_quantity' />
-               <input type="submit" value="<?php _e('Update', 'wpsc'); ?>" />
+               <input class="wpsc_update_button" type="submit" value="<?php _e('Update', 'wpsc'); ?>" />
             </form>
          </td>
 
@@ -79,7 +80,7 @@ endif;
                <input type="hidden" name="key" value="<?php echo wpsc_the_cart_item_key(); ?>" />
                <input type="hidden" name="wpsc_update_quantity" value="true" />
                <input type='hidden' name='wpsc_ajax_action' value='wpsc_update_quantity' />
-               <input type="submit" value="<?php _e('Remove', 'wpsc'); ?>" />
+               <input class="wpsc_remove_button" type="submit" value="<?php _e('x', 'wpsc'); ?>" />
             </form>
          </td>
       </tr>
@@ -111,6 +112,7 @@ endif;
       </tr>
    <?php endif; ?>
    </table>
+</div><!-- end of checkout_cart_table -->
    <!-- cart contents table close -->
   <?php if(wpsc_uses_shipping()): ?>
 	   <p class="wpsc_cost_before"></p>
