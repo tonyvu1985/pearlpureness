@@ -42,12 +42,23 @@
 			</a>
 				</div>
 				<div class="col-md-6 col-xs-12" style="text-align:right">
-					<img class="free-delivery" src="<?php echo get_site_url() . '/wp-content/uploads/2014/05/Free-delivery.png' ;?>" alt="free delivery" />
+
 					<ul class="toplink">
 						<li><a href="<?php echo get_site_url() . '/products-page/your-account/' ?>">My Account</a></li>
 						<li><a href="<?php echo get_site_url() . '/products-page/transaction-results/' ?>">Transaction Results</a></li>
 						<li><a href="<?php echo get_site_url() . '/products-page/checkout/' ?>">Checkout</a></li>
 					</ul>
+					<table class="table" style="margin-bottom: 0px; border:0">
+					    <tr>
+						<td class="icon"><i class="icon-truck icon-2x"></i></td>
+						<td>FREE SHIP<br/>OVER $50</td>
+						<td class="icon"><i class="icon-calendar icon-2x"></i></td>
+						<td>FREE RETURN<br/>100 DAYS</td>
+						<td class="icon"><i class="icon-time icon-2x"></i></td>
+						<td>3 HOURS DELIVERY<br/>SYDNEY</td>
+					    </tr>
+					</table>
+
 				</div>
 			</div>
 
