@@ -62,8 +62,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 @media (max-width: 470px){
 	.site-header .home-link .toplink li .text{display:none}	
-.site-header .home-link .toplink i{font-size:2em;}
-.site-header .home-link .toplink{float:left; padding-left:5px; padding-bottom: 0 !important}
+	.site-header .home-link .toplink i{font-size:2em;}
+
+}
+
+@media(max-width:980px){
+	.site-header .home-link .toplink{float:left; padding-left:5px; padding-bottom: 0 !important}
 }
 
 * {

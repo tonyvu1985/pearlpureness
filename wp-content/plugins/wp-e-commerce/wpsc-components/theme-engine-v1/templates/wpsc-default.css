@@ -14,9 +14,9 @@ Author URI: http://instinct.co.nz
 /* tonyvu css */
 .wpsc_email_address{clear:both; display:inline-block}
 .wpsc_billing_forms h4, .wpsc_shipping_forms h4{border-left: 5px solid #3399fe; padding-left:10px; font-size:18px; text-transform:uppercase}
-.wpsc_remove_button, .wpsc_update_button{background:none !important; color:#bc360a !important; border: 0px !important}
+.wpsc_remove_button {background:none !important; color:#bc360a !important; border: 0px !important; padding: 7px 5px 0 5px !important}
 @media (max-width: 767px){
-	.checkout_cart{width: 100%; overflow-y: hidden; overflow-x: scroll; padding: 10px; border: 1px solid #dddddd; display: inline-block;}
+	.checkout_cart{width: 100%; overflow-y: hidden; overflow-x: scroll; padding: 10px; display: block;}
 }
 .wpsc_checkout_table input[type="text"], .wpsc_checkout_table select, .wpsc_checkout_table textarea{width:100%; margin: 5px 0 !important}
 .wpsc_checkout_table.wpsc_checkout_table_totals{text-align: right; background: #f5f5f5; width: 250px; padding: 20px !important; display: block; border: 1px solid #ccc !important; font-size: 18px;}
@@ -852,9 +852,9 @@ span.rating_saved{
 #checkout_page_container input,
 #content #checkout_page_container textarea,
 #content #checkout_page_container input {
-	line-height:1.2em;
+/*	line-height:1.2em;
+	margin:0;*/
 	font-size:14px;
-	margin:0;
 }
 
 #content #checkout_page_container input[type="submit"] {
@@ -884,15 +884,15 @@ span.rating_saved{
 }
 
 #checkout_page_container table.checkout_cart tr td, #content #checkout_page_container table.checkout_cart tr td {
-	margin:0;
+/*	margin:0;
 	padding:5px;
-	vertical-align:middle;
+	vertical-align:middle;*/
 }
 
 #checkout_page_container table.checkout_cart tr.wpsc_coupon_row td form input#coupon_num {
-	width: 293px;
-	padding: 0px;
-	margin: 0px 20px 0px 0px;
+/*	width: 293px;
+	margin: 0px 20px 0px 0px;*/
+	padding: 19px 10px;
 }
 
 #checkout_page_container table.checkout_cart tr.wpsc_total_before_shipping td.wpsc_total_amount_before_shipping{
@@ -1009,14 +1009,14 @@ background-color: #f5f5f5;
 }
 
 #content #checkout_page_container table.checkout_cart tr.product_row td, #content #checkout_page_container table.checkout_cart tr.product_row {
-	padding:2px 0px 1px 0px;
+/*	padding:2px 0px 1px 0px;
 	margin:0px;
-	line-height: 1;
+	line-height: 1;*/
 }
 
 #checkout_page_container table.checkout_cart td.firstcol {
 	vertical-align:middle;
-	text-align:center;
+	text-align:left;
 }
 
 #checkout_page_container .coupon {
@@ -1049,8 +1049,8 @@ background-color: #f5f5f5;
 }
 
 #content #checkout_page_container table.checkout_cart tr.product_row td.wpsc_product_name {
-	width: 200px;
-	padding-left: 20px;
+/*	width: 200px;
+	padding-left: 20px;*/
 }
 
 .wpsc_registration_form {

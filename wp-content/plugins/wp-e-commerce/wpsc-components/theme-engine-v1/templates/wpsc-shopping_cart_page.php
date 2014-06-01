@@ -13,15 +13,14 @@ endif;
 ?>
 <div id="checkout_page_container">
 <h3><?php _e('Please review your order', 'wpsc'); ?></h3>
-<div class="row">
 <table class="checkout_cart table table-hover">
-   <tr class="header">
-      <th colspan="2" ><?php _e('Product', 'wpsc'); ?></th>
-      <th><?php _e('Quantity', 'wpsc'); ?></th>
-      <th><?php _e('Price', 'wpsc'); ?></th>
-      <th><?php _e('Total', 'wpsc'); ?></th>
-        <th>&nbsp;</th>
-   </tr>
+	   <tr class="header">
+	      <th colspan="2" ><?php _e('Product', 'wpsc'); ?></th>
+	      <th><?php _e('Quantity', 'wpsc'); ?></th>
+	      <th><?php _e('Price', 'wpsc'); ?></th>
+	      <th><?php _e('Total', 'wpsc'); ?></th>
+		<th>&nbsp;</th>
+	   </tr>
    <?php while (wpsc_have_cart_items()) : wpsc_the_cart_item(); ?>
       <?php
        $alt++;
@@ -62,11 +61,15 @@ endif;
 
          <td class="wpsc_product_quantity wpsc_product_quantity_<?php echo wpsc_the_cart_item_key(); ?>">
             <form action="<?php echo esc_url( get_option( 'shopping_cart_url' ) ); ?>" method="post" class="adjustform qty">
-               <input type="text" name="quantity" size="2" value="<?php echo wpsc_cart_item_quantity(); ?>" />
-               <input type="hidden" name="key" value="<?php echo wpsc_the_cart_item_key(); ?>" />
-               <input type="hidden" name="wpsc_update_quantity" value="true" />
-               <input type='hidden' name='wpsc_ajax_action' value='wpsc_update_quantity' />
-               <input class="wpsc_update_button" type="submit" value="<?php _e('Update', 'wpsc'); ?>" />
+		<div class="input-group">
+		       <input class="form-control" type="text" name="quantity" size="2" value="<?php echo wpsc_cart_item_quantity(); ?>" />
+		       <input type="hidden" name="key" value="<?php echo wpsc_the_cart_item_key(); ?>" />
+		       <input type="hidden" name="wpsc_update_quantity" value="true" />
+		       <input type='hidden' name='wpsc_ajax_action' value='wpsc_update_quantity' />
+			<span class="input-group-btn">
+			       <button class="wpsc_update_button btn btn-default" type="submit" value="<?php _e('Update', 'wpsc'); ?>">Update</button>
+			</span>
+		</div>
             </form>
          </td>
 
@@ -102,17 +105,21 @@ endif;
          <tr class="wpsc_coupon_row wpsc_coupon_error_row"><td colspan="6"><?php _e('Coupon is not valid.', 'wpsc'); ?></td></tr>
       <?php endif; ?>
       <tr class="wpsc_coupon_row">
-         <td colspan="2"><?php _e('Enter coupon code :', 'wpsc'); ?></td>
-         <td  colspan="4" class="coupon_code">
+         <!--<td colspan="2"><?php //_e('Enter coupon code :', 'wpsc'); ?></td>-->
+         <td  colspan="6" class="coupon_code">
             <form  method="post" action="<?php echo esc_url( get_option( 'shopping_cart_url' ) ); ?>">
-               <input class="form-control" type="text" name="coupon_num" id="coupon_num" value="<?php echo $wpsc_cart->coupons_name; ?>" />
-               <input type="submit" value="<?php _e('Update', 'wpsc') ?>" />
+		<div class="input-group">
+			<span class="input-group-addon"><label>Coupon code</label></span>
+		        <input class="form-control" type="text" name="coupon_num" id="coupon_num" value="<?php echo $wpsc_cart->coupons_name; ?>" />
+			<span class="input-group-btn">
+			       <input type="submit" value="<?php _e('Update', 'wpsc') ?>" />
+			</span>
+		</div>
             </form>
          </td>
       </tr>
    <?php endif; ?>
    </table>
-</div><!-- end of checkout_cart_table -->
    <!-- cart contents table close -->
   <?php if(wpsc_uses_shipping()): ?>
 	   <p class="wpsc_cost_before"></p>
