@@ -918,7 +918,7 @@ div.nav-menu > ul {
 	border-top: 0;
 	padding: 0;
 	position: absolute;
-	left: -2px;
+/*	left: -2px;*/
 	z-index: 99999;
 	height: 1px;
 	width: 1px;
@@ -2596,13 +2596,13 @@ footer.entry-meta {
 }
 
 .site-footer .sidebar-container {
-	background-color: #161415;
+	background-color: #222;
 	padding: 20px 0;
 }
 
 .site-footer .widget-area {
 	margin: 0 auto;
-	max-width: 1080px;
+	max-width: 1120px;
 	width: 100%;
 }
 

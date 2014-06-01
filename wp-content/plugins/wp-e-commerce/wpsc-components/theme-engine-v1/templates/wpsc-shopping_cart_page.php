@@ -255,19 +255,21 @@ endif;
    </table>
 	<?php if ( wpsc_show_user_login_form() && !is_user_logged_in() ): ?>
 			<p><?php _e('You must sign in or register with us to continue with your purchase', 'wpsc');?></p>
-			<div class="wpsc_registration_form">
+			<div class="row">
+				<div class="wpsc_registration_form col-md-6">
 
-				<fieldset class='wpsc_registration_form'>
-					<h2><?php _e( 'Sign in', 'wpsc' ); ?></h2>
-					<?php
-					$args = array(
-						'remember' => false,
-                    	'redirect' => get_option( 'shopping_cart_url' )
-					);
-					wp_login_form( $args );
-					?>
-					<div class="wpsc_signup_text"><?php _e('If you have bought from us before please sign in here to purchase', 'wpsc');?></div>
-				</fieldset>
+					<fieldset class='wpsc_registration_form'>
+						<h2><?php _e( 'Sign in', 'wpsc' ); ?></h2>
+						<?php
+						$args = array(
+							'remember' => false,
+				'redirect' => get_option( 'shopping_cart_url' )
+						);
+						wp_login_form( $args );
+						?>
+						<div class="wpsc_signup_text"><?php _e('If you have bought from us before please sign in here to purchase', 'wpsc');?></div>
+					</fieldset>
+				</div>
 			</div>
 	<?php endif; ?>
 
