@@ -16,7 +16,12 @@ Author URI: http://instinct.co.nz
 .wpsc_billing_forms h4, .wpsc_shipping_forms h4{border-left: 5px solid #3399fe; padding-left:10px; font-size:18px; text-transform:uppercase}
 .wpsc_remove_button {background:none !important; color:#bc360a !important; border: 0px !important; padding: 7px 5px 0 5px !important}
 @media (max-width: 767px){
-	.checkout_cart{width: 100%; overflow-y: hidden; overflow-x: scroll; padding: 10px; display: block;}
+	.cover_checkout_cart_table{width: 100%; overflow-y: hidden; overflow-x: scroll; display: block;}
+
+}
+
+@media (max-width:480px){
+	.checkout_cart .wpsc_product_quantity input{width:40px !important}
 }
 .wpsc_checkout_table input[type="text"], .wpsc_checkout_table select, .wpsc_checkout_table textarea{width:100%; margin: 5px 0 !important}
 .wpsc_checkout_table.wpsc_checkout_table_totals{text-align: right; background: #f5f5f5; width: 250px; padding: 20px !important; display: block; border: 1px solid #ccc !important; font-size: 18px;}
@@ -869,7 +874,7 @@ span.rating_saved{
 #checkout_page_container table.checkout_cart tr.header th:first-child{
 	text-align: left;
 }
-
+.checkout_cart .wpsc_product_quantity{width:30%}
 #checkout_page_container table.checkout_cart tr.wpsc_total_before_shipping td {
 
 }

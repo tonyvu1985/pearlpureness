@@ -13,6 +13,7 @@ endif;
 ?>
 <div id="checkout_page_container">
 <h3><?php _e('Please review your order', 'wpsc'); ?></h3>
+<div class="cover_checkout_cart_table">
 <table class="checkout_cart table table-hover">
 	   <tr class="header">
 	      <th colspan="2" ><?php _e('Product', 'wpsc'); ?></th>
@@ -121,6 +122,7 @@ endif;
    <?php endif; ?>
    </table>
    <!-- cart contents table close -->
+</div><!-- div cover checkout_cart table -->
   <?php if(wpsc_uses_shipping()): ?>
 	   <p class="wpsc_cost_before"></p>
    <?php endif; ?>
