@@ -68,7 +68,7 @@ endif;
 		       <input type="hidden" name="wpsc_update_quantity" value="true" />
 		       <input type='hidden' name='wpsc_ajax_action' value='wpsc_update_quantity' />
 			<span class="input-group-btn">
-			       <button class="wpsc_update_button btn btn-default" type="submit" value="<?php _e('Update', 'wpsc'); ?>">Update</button>
+			       <input class="wpsc_update_button btn btn-default" type="submit" value="<?php _e('Update', 'wpsc'); ?>"/>
 			</span>
 		</div>
             </form>
@@ -113,7 +113,7 @@ endif;
 			<span class="input-group-addon"><label>Coupon code</label></span>
 		        <input class="form-control" type="text" name="coupon_num" id="coupon_num" value="<?php echo $wpsc_cart->coupons_name; ?>" />
 			<span class="input-group-btn">
-			       <input type="submit" value="<?php _e('Update', 'wpsc') ?>" />
+			       <input class="btn btn-default" type="submit" value="<?php _e('Update', 'wpsc') ?>" />
 			</span>
 		</div>
             </form>

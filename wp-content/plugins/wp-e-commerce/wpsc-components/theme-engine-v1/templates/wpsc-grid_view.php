@@ -142,7 +142,7 @@ $image_height = get_option('product_image_height');
 									?>
 						<span class="input-group-btn">
 									<input type="hidden" value="add_to_cart" name="wpsc_ajax_action"/>
-									<input type="submit" value="<?php _e('Add To Cart', 'wpsc'); ?>" name="Buy" class="wpsc_buy_button btn btn-cart btn-danger" id="product_<?php echo wpsc_the_product_id(); ?>_submit_button"/>
+									<input type="submit" value="<?php _e('Add To Cart', 'wpsc'); ?>" name="Buy" class="wpsc_buy_button btn btn-cart btn-primary" id="product_<?php echo wpsc_the_product_id(); ?>_submit_button"/>
 						</span>
 
 									</div><!--close quantity_container-->
