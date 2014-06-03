@@ -113,7 +113,7 @@ endif;
 			<span class="input-group-addon"><label>Coupon code</label></span>
 		        <input class="form-control" type="text" name="coupon_num" id="coupon_num" value="<?php echo $wpsc_cart->coupons_name; ?>" />
 			<span class="input-group-btn">
-			       <input class="btn btn-default" type="submit" value="<?php _e('Update', 'wpsc') ?>" />
+			       <input style="height:40px" class="btn btn-default" type="submit" value="<?php _e('Update', 'wpsc') ?>" />
 			</span>
 		</div>
             </form>
@@ -301,15 +301,20 @@ endif;
 
 	        <fieldset class='wpsc_registration_form wpsc_right_registration'>
 	        	<h2><?php _e('Join up now', 'wpsc');?></h2>
+				<div class="input-group">
+					<span class="input-group-addon"><label><?php _e('Username', 'wpsc'); ?></label></span>
+					<input class="form-control" type="text" name="log" id="log" value="" size="20"/>
+				</div>
 
-				<label><?php _e('Username:', 'wpsc'); ?></label>
-				<input class="form-control" type="text" name="log" id="log" value="" size="20"/><br/>
+				<div class="input-group">
+					<span class="input-group-addon"><label><?php _e('Password', 'wpsc'); ?></label></span>
+					<input class="form-control" type="password" name="pwd" id="pwd" value="" size="20" />
+				</div>
 
-				<label><?php _e('Password:', 'wpsc'); ?></label>
-				<input class="form-control" type="password" name="pwd" id="pwd" value="" size="20" /><br />
-
-				<label><?php _e('E-mail', 'wpsc'); ?>:</label>
-	            <input class="form-control" type="text" name="user_email" id="user_email" value="" size="20" /><br />
+				<div class="input-group">
+					<span class="input-group-addon"><label><?php _e('Email', 'wpsc'); ?></label></span>
+				    <input class="form-control" type="text" name="user_email" id="user_email" value="" size="20" />
+				</div>
 	            <div class="wpsc_signup_text"><?php _e('Signing up is free and easy! please fill out your details your registration will happen automatically as you checkout. Don\'t forget to use your details to login with next time!', 'wpsc');?></div>
 	        </fieldset>
 
@@ -458,7 +463,7 @@ endif;
                <input type='hidden' value='yes' name='agree' />
             <?php endif; ?>
                <input type='hidden' value='submit_checkout' name='wpsc_action' />
-               <input type='submit' value='<?php _e('Purchase', 'wpsc');?>' class='make_purchase wpsc_buy_button' />
+               <input type='submit' value='<?php _e('Purchase', 'wpsc');?>' class='make_purchase wpsc_buy_button btn btn-danger' />
          </span>
       </div>
 

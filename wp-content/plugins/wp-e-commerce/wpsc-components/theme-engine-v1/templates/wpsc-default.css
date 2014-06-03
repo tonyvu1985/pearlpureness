@@ -503,7 +503,6 @@ table.list_productdisplay p.soldout {
 	font-size:14px;
 }
 
-.single_product_display .wpsc_buy_button{background: #3399fe}
 .single_product_display form.product_form input.input_custom_text, #content .single_product_display form.product_form input.input_custom_text {
 	width:250px;
 }
