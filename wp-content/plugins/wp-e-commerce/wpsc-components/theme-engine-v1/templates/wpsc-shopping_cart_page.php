@@ -99,7 +99,7 @@ endif;
    if(wpsc_uses_coupons()): ?>
 
       <tr class="wpsc_total_before_shipping">
-         <td colspan="3"><?php _e('Cost before shipping:','wpsc'); ?></td>
+         <td colspan="3"><?php _e('Cost before shipping','wpsc'); ?></td>
          <td colspan="3" class="wpsc_total_amount_before_shipping"><?php echo wpsc_cart_total_widget(false,false,false);?></td>
       </tr>
       <?php if(wpsc_coupons_error()): ?>
@@ -110,7 +110,7 @@ endif;
          <td  colspan="6" class="coupon_code">
             <form  method="post" action="<?php echo esc_url( get_option( 'shopping_cart_url' ) ); ?>">
 		<div class="input-group">
-			<span class="input-group-addon"><label>Coupon code</label></span>
+			<span class="input-group-addon">Coupon code</span>
 		        <input class="form-control" type="text" name="coupon_num" id="coupon_num" value="<?php echo $wpsc_cart->coupons_name; ?>" />
 			<span class="input-group-btn">
 			       <input style="height:40px" class="btn btn-default" type="submit" value="<?php _e('Update', 'wpsc') ?>" />
@@ -301,18 +301,18 @@ endif;
 
 	        <fieldset class='wpsc_registration_form wpsc_right_registration'>
 	        	<h2><?php _e('Join up now', 'wpsc');?></h2>
-				<div class="input-group">
-					<span class="input-group-addon"><label><?php _e('Username', 'wpsc'); ?></label></span>
+				<div class="input-group" style="margin-bottom:7px">
+					<span class="input-group-addon"><?php _e('Username', 'wpsc'); ?></span>
 					<input class="form-control" type="text" name="log" id="log" value="" size="20"/>
 				</div>
 
-				<div class="input-group">
-					<span class="input-group-addon"><label><?php _e('Password', 'wpsc'); ?></label></span>
+				<div class="input-group" style="margin-bottom:7px">
+					<span class="input-group-addon"><?php _e('Password', 'wpsc'); ?></span>
 					<input class="form-control" type="password" name="pwd" id="pwd" value="" size="20" />
 				</div>
 
 				<div class="input-group">
-					<span class="input-group-addon"><label><?php _e('Email', 'wpsc'); ?></label></span>
+					<span class="input-group-addon"><?php _e('Email', 'wpsc'); ?></span>
 				    <input class="form-control" type="text" name="user_email" id="user_email" value="" size="20" />
 				</div>
 	            <div class="wpsc_signup_text"><?php _e('Signing up is free and easy! please fill out your details your registration will happen automatically as you checkout. Don\'t forget to use your details to login with next time!', 'wpsc');?></div>
