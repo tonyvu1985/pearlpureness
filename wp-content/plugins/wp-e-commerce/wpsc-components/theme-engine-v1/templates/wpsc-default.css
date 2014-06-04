@@ -12,6 +12,7 @@ Author URI: http://instinct.co.nz
  * to create your own theme copy, and paste this file, change the names and alter to your tastes
 */
 /* tonyvu css */
+#wpsc_shopping_cart_container{margin-top:20px}
 .wpsc_email_address{clear:both; display:inline-block}
 .wpsc_billing_forms h4, .wpsc_shipping_forms h4{border-left: 5px solid #3399fe; padding-left:10px; font-size:18px; text-transform:uppercase}
 .wpsc_remove_button {background:none !important; color:#bc360a !important; border: 0px !important; padding: 7px 5px 0 5px !important}
@@ -20,9 +21,6 @@ Author URI: http://instinct.co.nz
 
 }
 
-@media (max-width:480px){
-	.checkout_cart .wpsc_product_quantity input{width:40px !important}
-}
 .wpsc_checkout_table input[type="text"], .wpsc_checkout_table select, .wpsc_checkout_table textarea{width:100%; margin: 5px 0 !important}
 .wpsc_checkout_table.wpsc_checkout_table_totals{text-align: right; background: #f5f5f5; width: 250px; padding: 20px !important; display: block; border: 1px solid #ccc !important; font-size: 18px;}
 .user-profile-links{background:#f5f5f5; padding: 10px 0; margin-bottom:20px}
