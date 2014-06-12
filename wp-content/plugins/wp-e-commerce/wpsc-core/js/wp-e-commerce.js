@@ -1325,9 +1325,13 @@ function wpsc_fancy_notification(parent_form){
 	}
 	if((WPSC_SHOW_FANCY_NOTIFICATION === true) && (jQuery('#fancy_notification') !== null)){
 		jQuery('#fancy_notification').css({
-		        position:'fixed',
+		       /* position:'fixed',
 		        left: (jQuery(window).width() - jQuery('#fancy_notification').outerWidth())/2,
-		        top: (jQuery(window).height() - jQuery('#fancy_notification').outerHeight())/2
+		        top: (jQuery(window).height() - jQuery('#fancy_notification').outerHeight())/2*/
+
+			position:'absolute',
+			    left: ((jQuery(window).width() - jQuery('#fancy_notification').outerWidth()) / 2) +   jQuery(window).scrollLeft(),
+			    top:  ((jQuery(window).height() - jQuery('#fancy_notification').outerHeight()) / 2) + jQuery(window).scrollTop()
 		    });
 
 		jQuery('#fancy_notification').css("display", 'block');
