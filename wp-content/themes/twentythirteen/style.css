@@ -59,7 +59,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* tonyvu css */
 .usp td{border-top:0 !important}
-
+.entry-thumbnail{display:none}
 @media (max-width: 470px){
 	.site-header .home-link .toplink li .text{display:none}	
 	.site-header .home-link .toplink i{font-size:2em;}
