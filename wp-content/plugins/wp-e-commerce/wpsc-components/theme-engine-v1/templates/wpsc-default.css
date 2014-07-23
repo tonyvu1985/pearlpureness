@@ -19,6 +19,8 @@ Author URI: http://instinct.co.nz
 .wpsc_remove_button {background:none !important; color:#bc360a !important; border: 0px !important; padding: 7px 5px 0 5px !important}
 @media (max-width: 767px){
 	.cover_checkout_cart_table{width: 100%; overflow-y: hidden; overflow-x: scroll; display: inline-block}
+	.cover_checkout_cart_table .checkout_cart .qty-input{width:120px}
+	.cover_checkout_cart_table .checkout_cart .wpsc_product_name{width:140px; display:block} 
 }
 
 .wpsc_checkout_table input[type="text"], .wpsc_checkout_table select, .wpsc_checkout_table textarea{width:100%; margin: 5px 0 !important}

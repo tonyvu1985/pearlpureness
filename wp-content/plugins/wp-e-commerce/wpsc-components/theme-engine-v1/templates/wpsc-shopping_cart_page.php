@@ -62,7 +62,7 @@ endif;
 
          <td class="wpsc_product_quantity wpsc_product_quantity_<?php echo wpsc_the_cart_item_key(); ?>">
             <form action="<?php echo esc_url( get_option( 'shopping_cart_url' ) ); ?>" method="post" class="adjustform qty">
-		<div class="input-group">
+		<div class="input-group qty-input">
 		       <input class="form-control" type="text" name="quantity" size="2" value="<?php echo wpsc_cart_item_quantity(); ?>" />
 		       <input type="hidden" name="key" value="<?php echo wpsc_the_cart_item_key(); ?>" />
 		       <input type="hidden" name="wpsc_update_quantity" value="true" />
