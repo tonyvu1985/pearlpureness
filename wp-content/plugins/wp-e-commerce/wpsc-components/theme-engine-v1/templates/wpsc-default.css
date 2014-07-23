@@ -18,8 +18,7 @@ Author URI: http://instinct.co.nz
 .wpsc_billing_forms h4, .wpsc_shipping_forms h4{border-left: 5px solid #3399fe; padding-left:10px; font-size:18px; text-transform:uppercase}
 .wpsc_remove_button {background:none !important; color:#bc360a !important; border: 0px !important; padding: 7px 5px 0 5px !important}
 @media (max-width: 767px){
-	.cover_checkout_cart_table{width: 100%; overflow-y: hidden; overflow-x: scroll; display: block;}
-
+	.cover_checkout_cart_table{width: 100%; overflow-y: hidden; overflow-x: scroll; display: inline-block}
 }
 
 .wpsc_checkout_table input[type="text"], .wpsc_checkout_table select, .wpsc_checkout_table textarea{width:100%; margin: 5px 0 !important}
@@ -999,8 +998,8 @@ background-color: #f5f5f5;
 #checkout_page_container table.checkout_cart .wpsc_product_name a:hover{text-decoration:none; color:#3399fe}
 
 #checkout_page_container table.checkout_cart tr, #content #checkout_page_container table.checkout_cart tr {
-	margin:0;
-	padding:0;
+/*	margin:0;
+	padding:0;*/
 }
 
 #content #checkout_page_container table.checkout_cart tr.wpsc_coupon_row td{
@@ -1010,8 +1009,8 @@ background-color: #f5f5f5;
 }
 
 #content #checkout_page_container table.checkout_cart tr.product_row td.wpsc_product_image img {
-	height: 31px;
-	width: 31px;
+	height: 50px;
+	width: 50px;
 }
 
 #content #checkout_page_container table.checkout_cart tr.product_row td, #content #checkout_page_container table.checkout_cart tr.product_row {
