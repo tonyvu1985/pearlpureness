@@ -45,29 +45,6 @@
 
 					<div class="productcol">
 						<?php do_action('wpsc_product_before_description', wpsc_the_product_id(), $wp_query->post); ?>
-						<div class="product_description">
-							<?php echo wpsc_the_product_description(); ?>
-						</div><!--close product_description -->
-						<?php do_action( 'wpsc_product_addons', wpsc_the_product_id() ); ?>
-						<?php if ( wpsc_the_product_additional_description() ) : ?>
-							<div class="single_additional_description">
-								<p><?php echo wpsc_the_product_additional_description(); ?></p>
-							</div><!--close single_additional_description-->
-						<?php endif; ?>
-						<?php do_action( 'wpsc_product_addon_after_descr', wpsc_the_product_id() ); ?>
-						<?php
-						/**
-						 * Custom meta HTML and loop
-						 */
-						?>
-                        <?php if (wpsc_have_custom_meta()) : ?>
-						<div class="custom_meta">
-							<?php while ( wpsc_have_custom_meta() ) : wpsc_the_custom_meta(); ?>
-								<?php if (stripos(wpsc_custom_meta_name(),'g:') !== FALSE) continue; ?>
-								<strong><?php echo wpsc_custom_meta_name(); ?>: </strong><?php echo wpsc_custom_meta_value(); ?><br />
-							<?php endwhile; ?>
-						</div><!--close custom_meta-->
-                        <?php endif; ?>
 						<?php
 						/**
 						 * Form data
@@ -175,7 +152,7 @@
 											<?php $action = wpsc_product_external_link( wpsc_the_product_id() ); ?>
 											<input class="wpsc_buy_button" type="submit" value="<?php echo wpsc_product_external_link_text( wpsc_the_product_id(), __( 'Buy Now', 'wpsc' ) ); ?>" onclick="return gotoexternallink('<?php echo esc_url( $action ); ?>', '<?php echo wpsc_product_external_link_target( wpsc_the_product_id() ); ?>')">
 											<?php else: ?>
-										<input type="submit" value="<?php _e('Add To Cart', 'wpsc'); ?>" name="Buy" class="wpsc_buy_button btn btn-primary" id="product_<?php echo wpsc_the_product_id(); ?>_submit_button"/>
+										<input type="submit" value="<?php _e('Add To Cart', 'wpsc'); ?>" name="Buy" class="wpsc_buy_button btn btn-success" id="product_<?php echo wpsc_the_product_id(); ?>_submit_button"/>
 											<?php endif; ?>
 										<div class="wpsc_loading_animation">
 											<img title="Loading" alt="Loading" src="<?php echo wpsc_loading_animation_url(); ?>" />
@@ -188,6 +165,29 @@
 							<?php endif ; ?>
 							<?php do_action ( 'wpsc_product_form_fields_end' ); ?>
 						</form><!--close product_form-->
+						<div class="product_description">
+							<?php echo wpsc_the_product_description(); ?>
+						</div><!--close product_description -->
+						<?php do_action( 'wpsc_product_addons', wpsc_the_product_id() ); ?>
+						<?php if ( wpsc_the_product_additional_description() ) : ?>
+							<div class="single_additional_description">
+								<p><?php echo wpsc_the_product_additional_description(); ?></p>
+							</div><!--close single_additional_description-->
+						<?php endif; ?>
+						<?php do_action( 'wpsc_product_addon_after_descr', wpsc_the_product_id() ); ?>
+						<?php
+						/**
+						 * Custom meta HTML and loop
+						 */
+						?>
+                        <?php if (wpsc_have_custom_meta()) : ?>
+						<div class="custom_meta">
+							<?php while ( wpsc_have_custom_meta() ) : wpsc_the_custom_meta(); ?>
+								<?php if (stripos(wpsc_custom_meta_name(),'g:') !== FALSE) continue; ?>
+								<strong><?php echo wpsc_custom_meta_name(); ?>: </strong><?php echo wpsc_custom_meta_value(); ?><br />
+							<?php endwhile; ?>
+						</div><!--close custom_meta-->
+                        <?php endif; ?>
 
 						<?php
 							if ( (get_option( 'hide_addtocart_button' ) == 0 ) && ( get_option( 'addtocart_or_buynow' ) == '1' ) )

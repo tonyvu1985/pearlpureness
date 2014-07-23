@@ -12,6 +12,7 @@ Author URI: http://instinct.co.nz
  * to create your own theme copy, and paste this file, change the names and alter to your tastes
 */
 /* tonyvu css */
+.pricedisplay .currentprice{color:#3399fe; font-size:16px}
 #wpsc_shopping_cart_container{margin-top:20px}
 .wpsc_email_address{clear:both; display:inline-block}
 .wpsc_billing_forms h4, .wpsc_shipping_forms h4{border-left: 5px solid #3399fe; padding-left:10px; font-size:18px; text-transform:uppercase}
@@ -338,7 +339,7 @@ Author URI: http://instinct.co.nz
 
 .single_product_display form.product_form .wpsc_buy_button_container,
 #content .single_product_display form.product_form .wpsc_buy_button_container{
-	text-align: right;
+	text-align: left;
 }
 
 .default_product_display .wpsc_buy_button_container{
@@ -477,10 +478,9 @@ table.list_productdisplay p.soldout {
 
 
 .single_product_display .product_description, .single_product_display .single_additional_description {
-	font-size:14px;
-	line-height:1.2em;
-	margin:0 0 10px 0;
-	padding:0;
+	font-size:15px;
+	margin:20px 0 0px 0;
+	clear:both;
 }
 
 .single_product_display form.product_form fieldset, #content .single_product_display form.product_form fieldset {
@@ -489,9 +489,11 @@ table.list_productdisplay p.soldout {
 }
 
 .single_product_display form.product_form fieldset legend, #content .single_product_display form.product_form fieldset legend {
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: normal;
 	padding: 0px;
+	color:#42a62a;
+	text-transform:uppercase
 }
 
 .single_product_display form.product_form input, #content .single_product_display form.product_form input {
@@ -499,6 +501,7 @@ table.list_productdisplay p.soldout {
 	margin:0;
 	line-height:1.2em;
 	font-size:14px;
+	border-radius:0
 }
 
 .single_product_display form.product_form input.input_custom_text, #content .single_product_display form.product_form input.input_custom_text {
@@ -566,7 +569,7 @@ table.list_productdisplay p.soldout {
 
 .single_product_display .wpsc_product_price {
 	display: inline-block;
-	font-size: 16px;
+	font-size: 12px;
 	margin-bottom: 10px;
 	padding: 5px;
 }
