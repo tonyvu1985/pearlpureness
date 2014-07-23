@@ -2978,8 +2978,8 @@ footer.entry-meta {
 	.format-image .entry-title,
 	.format-gallery .entry-title,
 	.format-video .entry-title {
-		font-size: 22px;
-		font-weight: bold;
+	/*	font-size: 22px;
+		font-weight: bold;*/
 	}
 
 	.format-quote blockquote,
