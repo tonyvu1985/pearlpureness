@@ -1,6 +1,7 @@
 /*-----GRID PRODUCT DISPLAY-----*/
-.wpsc-product-price{position:absolute; top:0; left:15px;}
-.wpsc-product-price .currentprice{padding:6px; display:inline-block; background:#222; color:#fff; font-size:14px}
+/*.wpsc-product-price{position:absolute; top:0; left:15px;}*/
+.wpsc-product-price .currentprice{padding:5px 0; display:inline-block; color:#3399fe; font-size:15px}
+[name~="wpsc_quantity_update"] {width:70px !important;}
 #grid_view_products_page_container, #content #grid_view_products_page_container, #content #list_view_products_page_container {
 /*	width:650px;	*/
 	position:relative;
@@ -260,8 +261,8 @@
 	line-height:1.2em;
 	margin:0;
 	border-bottom:0;
-	text-transform:uppercase
-
+	text-transform:uppercase;
+	border-radius:0
 }
 
 .product_grid_display .wpsc_buy_button, #content .product_grid_display .wpsc_buy_button:hover {

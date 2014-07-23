@@ -42,7 +42,7 @@
 			</a>
 				</div>
 				<div class="col-md-6 col-xs-12" style="text-align:right">
-
+					<div id="wpmenucartl"></div>
 					<ul class="toplink">
 						<li><a href="<?php echo get_site_url() . '/products-page/your-account/' ?>"><i class="icon-user"></i> <span class="text">My Account</span></a></li>
 						<li><a href="<?php echo get_site_url() . '/products-page/transaction-results/' ?>"><i class="icon-book"></i> <span class="text">Transaction Results</span></a></li>

@@ -861,6 +861,7 @@ span.rating_saved{
 
 #content #checkout_page_container input[type="submit"] {
 /*	float:right;*/
+	border-radius:0
 }
 
 #checkout_page_container table.checkout_cart tr.header th{

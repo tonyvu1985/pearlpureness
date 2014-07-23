@@ -156,7 +156,7 @@ h4,
 h5,
 h6 {
 	clear: both;
-	font-family: Bitter, Georgia, serif;
+/*	font-family: Bitter, Georgia, serif;*/
 	line-height: 1.3;
 }
 
@@ -827,7 +827,7 @@ img.wp-smiley,
 
 .site-header {
 	position: relative;
-	background:#f5f5f
+	background:#f5f5f5
 }
 
 .site-header .home-link {
@@ -2490,7 +2490,7 @@ footer.entry-meta {
 }
 
 .widget .widget-title {
-	font: 300 20px "Source Sans Pro", Helvetica, sans-serif;
+/*	font: 300 20px "Source Sans Pro", Helvetica, sans-serif;*/
 	margin: 0 0 10px;
 }
 
@@ -2600,7 +2600,7 @@ footer.entry-meta {
 }
 
 .site-footer .sidebar-container {
-	background-color: #222;
+	background-color: #ddd;
 	padding: 20px 0;
 }
 
@@ -2646,8 +2646,9 @@ footer.entry-meta {
 .site-footer .widget-title,
 .site-footer .widget-title a,
 .site-footer .wp-caption-text {
-	color: #3399fe;
-	font-weight:500
+	color: #42a62a;
+	text-transform:uppercase;
+	font-size:15px;
 }
 
 .site-info {
