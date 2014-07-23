@@ -161,7 +161,7 @@ function wpsc_add_to_cart() {
 	if ( is_object( $cart_item ) ) {
 
 		do_action( 'wpsc_add_to_cart', $product, $cart_item );
-		$cart_messages[] = str_replace( "[product_name]", $cart_item->get_title(), __( 'You just added "[product_name]" to your cart.', 'wpsc' ) );
+		$cart_messages[] = str_replace( "[product_name]", $cart_item->get_title(), __( 'You just added "<b>[product_name]</b>" to your cart.', 'wpsc' ) );
 
 	} else {
 		if ( $parameters['quantity'] <= 0 ) {
