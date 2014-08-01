@@ -53,9 +53,9 @@
 						<td class="icon"><i class="icon-truck icon-2x"></i></td>
 						<td>FREE SHIP<br/>OVER $50</td>
 						<td class="icon"><i class="icon-calendar icon-2x"></i></td>
-						<td>FREE RETURN<br/>100 DAYS</td>
+						<td>FREE RETURN<br/>30 DAYS</td>
 						<td class="icon"><i class="icon-time icon-2x"></i></td>
-						<td>3 HOURS DELIVERY<br/>SYDNEY</td>
+						<td>3 DAYS<br/>DELIVERY</td>
 					    </tr>
 					</table>
 
