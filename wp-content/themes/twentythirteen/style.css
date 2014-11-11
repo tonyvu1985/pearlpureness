@@ -58,6 +58,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 
 /* tonyvu css */
+#comments{display:none}
 .usp td{border-top:0 !important}
 .entry-thumbnail{display:none}
 .pearl-title{font-size:15px; color:#42a62a; text-transform:uppercase}
