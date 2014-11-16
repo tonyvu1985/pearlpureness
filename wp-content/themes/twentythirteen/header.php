@@ -51,7 +51,7 @@
 					<table class="table usp" style="margin-bottom: 0px; border:0">
 					    <tr>
 						<td class="icon"><i class="icon-truck icon-2x"></i></td>
-						<td>FREE SHIP<br/>OVER $100</td>
+						<td>FREE SHIPPING<br/>OVER $100</td>
 						<td class="icon"><i class="icon-calendar icon-2x"></i></td>
 						<td>FREE RETURN<br/>30 DAYS</td>
 						<td class="icon"><i class="icon-time icon-2x"></i></td>

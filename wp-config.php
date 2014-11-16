@@ -16,7 +16,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'pearlpureness');
+define('DB_NAME', 'pearlpure_301014');
 
 /** MySQL database username */
 define('DB_USER', 'root');
